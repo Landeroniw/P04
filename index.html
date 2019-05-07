@@ -1,0 +1,163 @@
+
+<html>
+<head>
+        <link href="main.css" rel="stylesheet"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+    <title>P04</title>
+    <meta name="generator" content="MATLAB 9.6">
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.date" content="2019-04-15"><meta name="DC.source" content="fun1.m">
+</head>
+<body>
+    <div class="content"><h2>Contenidos</h2><div>
+        <ul><li><a href="#1">Ejercicio 1</a></li>
+            <li><a href="#2">Ejercicio 2</a></li>
+            <li><a href="#3">Ejercicio 3</a></li>
+            <li><a href="#4">Ejercicio 4</a></li>
+        </ul></div><h2 id="1">Ejercicio 1</h2><p>1.Matlab</p><pre class="codeinput">f = @(t) (1-t).*(t&gt;=0 &amp; t&lt;=1) + (t-1).*(t&gt;=1 &amp; t&lt;=2)
+g = @(t) (1).*(t&gt;=0 &amp; t&lt;=1)
+convconm(f,g);
+</pre><pre class="codeoutput">
+f =
+
+  function_handle with value:
+
+    @(t)(1-t).*(t&gt;=0&amp;t&lt;=1)+(t-1).*(t&gt;=1&amp;t&lt;=2)
+
+
+g =
+
+  function_handle with value:
+
+    @(t)(1).*(t&gt;=0&amp;t&lt;=1)
+
+</pre><img vspace="5" hspace="5" src="Untitled4_01.png" alt=""> 
+  <!--########################################################-->
+    <p>2.-Semi Gráfico</p>
+    
+    <img src="01/Captura.PNG" alt="Nature" class="responsive">
+    <img src="01/02.PNG" alt="Nature" class="responsive">
+    <img src="01/03.PNG" alt="Nature" class="responsive">
+    
+    <img src="01/convolucion.jpg" alt="Nature" class="responsive1">
+    <img src="01/grafica1_f(t).jpg" alt="Nature" class="responsive1" >
+    <img src="01/grafica1_g(t).jpg" alt="Nature" class="responsive1" >
+
+<h2 id="2">Ejercicio 2</h2>
+<p>1.Matlab</p><pre class="codeinput">f = @(t) (t).*(t&gt;=0 &amp; t&lt;=1) + (1).*(t&gt;1 &amp; t&lt;=2)
+g = @(t) (1).*(t&gt;=1 &amp; t&lt;=3)
+convconm(f,g);
+</pre><pre class="codeoutput">
+f =
+
+  function_handle with value:
+
+    @(t)(t).*(t&gt;=0&amp;t&lt;=1)+(1).*(t&gt;1&amp;t&lt;=2)
+
+
+g =
+
+  function_handle with value:
+
+    @(t)(1).*(t&gt;=1&amp;t&lt;=3)
+
+</pre><img vspace="5" hspace="5" src="Untitled4_02.png" alt=""> <img vspace="5" hspace="5" src="Untitled4_03.png" alt=""> 
+    
+    <!--########################################################-->
+    <p>2.-Semi Gráfico</p>
+    
+    <img src="02/01.PNG" alt="Nature" class="responsive">
+    <img src="02/02.PNG" alt="Nature" class="responsive">
+    
+    <img src="02/convolucion.jpg" alt="Nature" class="responsive1">
+    <img src="02/f(t).jpg" alt="Nature" class="responsive1" >
+    <img src="02/g(t-tau).jpg" alt="Nature" class="responsive1" >
+
+    <h2 id="3">Ejercicio 3</h2><p>1.Matlab</p><pre class="codeinput">f = @(t) 1*(t&gt;=0 &amp; t&lt;=3) - (1).*(t&gt;3 &amp; t&lt;=4)
+g = @(t)  (-1).*(t&gt;=-4 &amp; t&lt;-3)+(1).*(t&gt;=-3 &amp; t&lt;=0)
+convconm(f,g);
+</pre><pre class="codeoutput">
+f =
+
+  function_handle with value:
+
+    @(t)1*(t&gt;=0&amp;t&lt;=3)-(1).*(t&gt;3&amp;t&lt;=4)
+
+
+g =
+
+  function_handle with value:
+
+    @(t)(-1).*(t&gt;=-4&amp;t&lt;-3)+(1).*(t&gt;=-3&amp;t&lt;=0)
+
+</pre><img vspace="5" hspace="5" src="Untitled4_04.png" alt=""> 
+    
+    <!--########################################################-->
+    <p>2.-Semi Gráfico</p>
+    
+    <img src="03/01.PNG" alt="Nature" class="responsive">
+    <img src="03/02.PNG" alt="Nature" class="responsive">
+    <img src="03/03.PNG" alt="Nature" class="responsive">
+    
+    <img src="03/autocorrelacion.jpg" alt="Nature" class="responsive1">
+    <img src="03/f(t).jpg" alt="Nature" class="responsive1" >
+    
+    <h2 id="4">Ejercicio 4</h2><p>1.Matlab</p><pre class="codeinput">f = @(t) 1*(t&gt;=0 &amp; t&lt;=2) - (1).*(t&gt;2 &amp; t&lt;=4)
+g = @(t)  (-1).*(t&gt;=-4 &amp; t&lt;-3)+(1).*(t&gt;=-3 &amp; t&lt;=0)
+convconm(f,g);
+</pre><pre class="codeoutput">
+f =
+
+  function_handle with value:
+
+    @(t)1*(t&gt;=0&amp;t&lt;=2)-(1).*(t&gt;2&amp;t&lt;=4)
+
+
+g =
+
+  function_handle with value:
+
+    @(t)(-1).*(t&gt;=-4&amp;t&lt;-3)+(1).*(t&gt;=-3&amp;t&lt;=0)
+
+</pre><img vspace="5" hspace="5" src="Untitled4_05.png" alt=""> 
+    
+    <!--########################################################-->
+    <p>2.-Semi Gráfico</p>
+    
+    <img src="04/01.PNG" alt="Nature" class="responsive">
+    <img src="04/02.PNG" alt="Nature" class="responsive">
+    <img src="04/03.PNG" alt="Nature" class="responsive">
+    <img src="04/04.PNG" alt="Nature" class="responsive">
+    
+    <img src="04/correlacion.jpg" alt="Nature" class="responsive1">
+    <img src="04/f(t).jpg" alt="Nature" class="responsive1">
+    <img src="04/g(t).jpg" alt="Nature" class="responsive1">
+
+    
+    
+<!--
+##### SOURCE BEGIN #####
+%% Ejercicio 1
+% 1.Matlab 
+f = @(t) (1-t).*(t>=0 & t<=1) + (t-1).*(t>=1 & t<=2)
+g = @(t) (1).*(t>=0 & t<=1)
+convconm(f,g);
+
+%% Ejercicio 2
+% 1.Matlab 
+f = @(t) (t).*(t>=0 & t<=1) + (1).*(t>1 & t<=2)
+g = @(t) (1).*(t>=1 & t<=3)
+convconm(f,g);
+%% Ejercicio 3
+% 1.Matlab 
+f = @(t) 1*(t>=0 & t<=3) - (1).*(t>3 & t<=4)
+g = @(t)  (-1).*(t>=-4 & t<-3)+(1).*(t>=-3 & t<=0)
+convconm(f,g);
+%% Ejercicio 4
+% 1.Matlab 
+f = @(t) 1*(t>=0 & t<=2) - (1).*(t>2 & t<=4)
+g = @(t)  (-1).*(t>=-4 & t<-3)+(1).*(t>=-3 & t<=0)
+convconm(f,g);
+##### SOURCE END #####
+--></body></html>
